@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import s from './components/App.module.css'
+import {Button} from "./components/Button";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    const [value, setValue] = useState(0)
+
+
+
+    const onIncHandler = () =>{
+        setValue(value+1)
+
+    }
+
+    const onResetHandler = () =>{
+     setValue(0)
+    }
+
+
+   return (
+      <div className={s.app}>
+    <div className={s.container}>
+
+   <div className={s.indecator + (value >= 5 ? " " + s.red : "")}>
+    <div className={s.input}> {value }</div>
+       <div>
+           <Button  name={'inc'} callback={()=>{onIncHandler()}} disabled={value >=5 }/>
+           <Button name={'reset'} callback={()=>{onResetHandler()}} />
+     </div>
+   </div>
+
     </div>
+
+      </div>
   );
 }
 
