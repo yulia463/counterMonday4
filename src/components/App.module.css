@@ -5,17 +5,16 @@
     padding: 10px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
     flex-direction: row;
     color: white;
-    /*background: slateblue;*/
+    height: 100vh;
     border: 1px solid white;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b47091+0,a75b7c+50,842048+56,ba5278+100 */
-    background: #b47091; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #b47091 0%, #a75b7c 50%, #842048 56%, #ba5278 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover,  #b47091 0%,#a75b7c 50%,#842048 56%,#ba5278 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center,  #b47091 0%,#a75b7c 50%,#842048 56%,#ba5278 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b47091', endColorstr='#ba5278',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #6db3f2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #6db3f2 0%, #54a3ee 27%, #3690f0 55%, #1e69de 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #6db3f2 0%,#54a3ee 27%,#3690f0 55%,#1e69de 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #6db3f2 0%,#54a3ee 27%,#3690f0 55%,#1e69de 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
 
 
 }
@@ -31,8 +30,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
-    height: 50px;
+    padding: 150px;
+    height: 70px;
 }
 
 .red {
@@ -43,9 +42,9 @@
     justify-content: center;
     align-items: center;
     height: 30px;
-    width: 200px;
+    width: 300px;
     border: 2px solid white;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -54,5 +53,6 @@
     background-color: white;
     border-radius: 10px;
     border: white;
-    height: 30px;
+    height: 50px;
+    width: 65px;
 }
